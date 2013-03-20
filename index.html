@@ -9,11 +9,30 @@
 
 <script type="text/javascript" src="js/tungsten-0.1.js"></script>
 
+<script type="text/javascript">
+
+function increment(evt, elt) {
+  console.log(arguments);
+  elt.innerHTML = 'toto';
+}
+
+W.init({
+    'postload': [
+        function() {
+            
+        }
+    ]
+});
+
+
+</script>
+
 </head>
 
 <body>
 
-Tupeuxpastest
+<div id="clickzone" class="w|clickable w|connect|click|clicktarget|increment|1">Increment!</div>
+<div id="clicktarget" class="w|slot|increment|increment">0</div>
 
 </body>
 

@@ -44,10 +44,10 @@ Date.prototype.toString = function(format) {
 };
 
 
-JS4WYD = function() {
+W = function() {
     // ########## private attributes ##########
     
-    var elementClassPrefix = "wyd";
+    var elementClassPrefix = "w";
     var elementClassSeparator = "|";
     var elementClassSeparatorAlt = "_";
     
