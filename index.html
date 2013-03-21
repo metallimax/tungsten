@@ -5,9 +5,9 @@
 
 <title>Tungsten JS Library</title>
 
-<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="resources/css/tungsten-0.1.css" />
 
-<script type="text/javascript" src="js/tungsten-0.1.js"></script>
+<script type="text/javascript" src="resources/js/tungsten-0.1.js"></script>
 
 <script type="text/javascript">
 
@@ -16,10 +16,11 @@ function increment(evt, elt) {
   elt.innerHTML = 'toto';
 }
 
+W.setDefaultHash("w|panel_home|xswitch");
 W.init({
     'postload': [
         function() {
-            
+          // TODO init something here
         }
     ]
 });
@@ -31,8 +32,16 @@ W.init({
 
 <body>
 
-<div id="clickzone" class="w|clickable w|connect|click|clicktarget|increment|1">Increment!</div>
-<div id="clicktarget" class="w|slot|increment|increment">0</div>
+<!--div id="clickzone" class="w|clickable w|connect|click|clicktarget|increment|1">Increment!</div>
+<div id="clicktarget" class="w|slot|increment|increment">0</div-->
+
+<div id="content">
+  <div id="panel">
+    <div id="panel_home" class="panel_text panel_hidden wyd|xswitchable|panel_hidden|panel_visible wyd|connect|xswitched|button_home|xswitch">
+      <h1>Welcome to Tungsten JS Library documentation</h1>
+    </div>
+  </div>
+</div>
 
 </body>
 

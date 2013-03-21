@@ -106,7 +106,7 @@ W = function() {
                 // PRELOAD
                 if(null != init_params.preload) {
                     // TODO implement this
-                    alert('PRELOAD not implemented');
+                    console.log('PRELOAD not implemented');
                 }
                 
                 // ANCHOR

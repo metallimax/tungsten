@@ -1,0 +1,95 @@
+* {
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+  font-size: 100%;
+  background-image: url(../medias/images/bg.jpg);
+  background-attachment: fixed;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+h1 {
+  font-size: 140%;
+}
+
+/*a:link,
+a:visited,
+a:active {
+    color: #122a52;
+}
+
+a:hover {
+    color: #9b0000;
+}*/
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display:none;
+}
+
+.w_clickable {
+    cursor: pointer;
+}
+
+div.panel_text ul {
+    list-style-image: url(../medias/images/bullet.png);
+}
+
+div.panel_text ul li {
+}
+
+ul.tabs {
+    list-style-type: none;
+    border-style: none none solid none;
+    border-color: #9b0000;
+}
+
+ul.tabs li {
+    display: inline-block;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-style: none;
+    border-width: 1px;
+    font-size: 8pt;
+}
+
+ul.tabs li.tab_selected {
+    background: #9b0000;
+    border-color: #122a52;
+    color: white;
+}
+
+ul.tabs li.tab_unselected {
+    background: #285bac;
+    border-color: #122a52;
+    color: #122a52;
+}
+
+.tab_visible {
+    display: block;
+}
+
+.tab_hidden {
+    display: none;
+}
+
+.tab0_visible {
+    display: block;
+}
+
+.tab0_hidden {
+    display: none;
+}
