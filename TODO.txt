@@ -1,0 +1,8 @@
+TODO
+------------------------
+- Download and unzip prettify (https://code.google.com/p/google-code-prettify/downloads/detail?name=prettify-4-Mar-2013.tar.bz2&can=2&q=)
+- Use SMACSS (http://smacss.com/)
+- Get responsive
+
+DONE
+------------------------

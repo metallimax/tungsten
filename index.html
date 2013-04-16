@@ -5,15 +5,32 @@
 
 <title>Tungsten JS Library</title>
 
-<link rel="stylesheet" type="text/css" media="all" href="resources/css/tungsten-0.1.css" />
+<link rel="shortcut icon" href="assets/ico/favicon.png">
 
-<script type="text/javascript" src="resources/js/tungsten-0.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<link href="assets/css/tungsten-0.1-base.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/tungsten-0.1-layout.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/tungsten-0.1-module.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/tungsten-0.1-state.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/tungsten-0.1-theme.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="resources/js/tungsten-0.1-core.js"></script>
 
 <script type="text/javascript">
 
 function increment(evt, elt) {
   console.log(arguments);
-  elt.innerHTML = 'toto';
 }
 
 W.setDefaultHash("w|panel_home|xswitch");
@@ -35,13 +52,93 @@ W.init({
 <!--div id="clickzone" class="w|clickable w|connect|click|clicktarget|increment|1">Increment!</div>
 <div id="clicktarget" class="w|slot|increment|increment">0</div-->
 
-<div id="content">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Tungsten</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Get started</a>
+              </li>
+              <li class="">
+                <a href="./download.html">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Tungsten</h1>
+    <p class="lead">Tungsten is a JavaScript library that allow elements connection.</p>
+  </div>
+</header>
+
+<div class="container">
+  <!-- Docs nav
+  ================================================== -->
+  <div class="row">
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav">
+        <li><a href="#global"><i class="icon-chevron-right"></i> Global approach</a></li>
+        <li><a href="#standard"><i class="icon-chevron-right"></i> Standard behaviour</a></li>
+        <li><a href="#component1"><i class="icon-chevron-right"></i> Component1</a></li>
+        <li><a href="#component2"><i class="icon-chevron-right"></i> Component2</a></li>
+        <li><a href="#component3"><i class="icon-chevron-right"></i> Component3</a></li>
+      </ul>
+    </div>
+    <div class="span9">
+      <section id="global">
+        <div class="page-header">
+          <h1>Global settings</h1>
+        </div>
+      </section>
+      <section id="standard">
+        <div class="page-header">
+          <h1>Standard behaviour</h1>
+        </div>
+      </section>
+      <section id="component1">
+        <div class="page-header">
+          <h1>Component1</h1>
+        </div>
+      </section>
+      <section id="component2">
+        <div class="page-header">
+          <h1>Component2</h1>
+        </div>
+      </section>
+      <section id="component3">
+        <div class="page-header">
+          <h1>Component3</h1>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!--div id="content">
   <div id="panel">
     <div id="panel_home" class="panel_text panel_hidden wyd|xswitchable|panel_hidden|panel_visible wyd|connect|xswitched|button_home|xswitch">
       <h1>Welcome to Tungsten JS Library documentation</h1>
     </div>
   </div>
-</div>
+</div-->
 
 </body>
 
